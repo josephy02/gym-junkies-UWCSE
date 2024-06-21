@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+  Names: Joseph Yared, Mia Pekez
+  Date: December 8th, 2023
+  Section: CSE 154 AA, AC
+  This is the index.html page for the final project.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GYM GURUS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id="top-bar">
+      <div class="white-navbar" id="navbar">
+        <a href="#home"id="home-btn">GYM JUNKIES</a>
+          <div class="nav-buttons">
+            <input type="text" id="search-bar" class="hidden" placeholder="Search">
+            <button id='search-btn' class="hidden" disabled>search</button>
+            <a href="#product-view" class="navbar-button" id="product-btn">PRODUCTS</a>
+            <a href="#login-view" class="navbar-button" id="login-btn">LOGIN</a>
+            <a href="#transaction-history" class="navbar-button" id="trans-btn">TRANSACTION HISTORY</a>
+            <a href="#create-account" class="navbar-button" id="newacct-btn">CREATE AN ACCOUNT</a>
+          </div>
+      </div>
+    </section>
+    <header>
+      <div id="header-image">
+        <img src="img/unsplash.jpg" alt="dumbbells">
+        <h1 id="header-title">GYM JUNKIES</h1>
+        <h2 id="header-subtitle">Your One-Stop Gym Shop!</h2>
+      </div>
+    </header>
+    <main>
+      <section id="main-view">
+        <h2 class="center-heading">ABOUT OUR COMPANY</h2>
+        <p class="center-subheading">Featured Items</p>
+        <div class="all-prod-offers">
+          <div class="card">
+            <img src="img/womens-joggers.png" alt="women's clothing">
+            <h1>Women's Joggers</h1>
+            <p class="price">$59.99</p>
+          </div>
+          <div class="card">
+            <img src="img/mens-short-sleeve-tshirt.png" alt="men's clothing">
+            <h1>Men's Shirts</h1>
+            <p class="price">$29.99</p>
+          </div>
+          <div class="card">
+            <img src="img/straps.png" alt="unisex accessorires">
+            <h1>Accessories</h1>
+            <p class="price">$8.99</p>
+          </div>
+          <div class="card">
+            <img src="img/womens-running-shoes.png" alt="women's shoes">
+            <h1>Women's Shoes</h1>
+            <p class="price">$99.99</p>
+          </div>
+        </div>
+      </section>
+      <section id="profile-container" class="hidden">
+        <h3>MEET THE TEAM</h3>
+        <div class="profile-cards">
+          <div class="single-profile">
+            <img src="img/profile_img_joe.jpg" alt="joe pic">
+            <div class="profile-text">
+              <h4>Joe</h4>
+              <p>University of Wahington</p>
+              <p><button>Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="profile-cards">
+          <div class="single-profile">
+            <img src="img/mia.jpg" alt="mia pic">
+            <div class="profile-text">
+              <h4>Mia</h4>
+              <p>University of Washington</p>
+              <p><button>Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Login view-->
+      <section id="login-view-section" class="hidden">
+        <form>
+          <div id="login" class="container">
+            <label class="bold-label" for="uname">Username</label>
+            <input id="username-input" type="text" placeholder="Enter Username" name="uname" required>
+            <label class="bold-label" for="psw">Password</label>
+            <input id="password-input" type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        </form>
+      </section>
+      <!-- product view -->
+      <section id='product-view' class='hidden'>
+        <div class="filter-buttons">
+          <label for="type-dropdown">Filter by type: </label>
+          <select id="type-dropdown">
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="unisex clothing">Unisex Clothing</option>
+            <option value="women's shoes">Women's Shoes</option>
+            <option value="men's shoes">Men's Shoes</option>
+            <option value="unisex accessories">Unisex Accessories</option>
+          </select>
+          <button id="filter-btn">Apply Filter</button>
+          <button id="list-view-btn">LIST</button>
+          <button id="grid-view-btn">GRID</button>
+        </div>
+
+      </section>
+      <!--product details view-->
+      <section id="product-details-view">
+        <section id='new-review'>
+          <h2>Review this product:</h2>
+          <form>
+            <label for='rating'>Rating (0-5)</label>
+            <input type='number' id='rating' name='rating' required min='0' max='5'>
+            <label for='text-review'>What'd you think of this product?</label>
+            <input type='text' id='text-review' name='text-review' required>
+            <button id="submit-btn">Submit!</button>
+          </form>
+        </section>
+      </section>
+
+      <!--transaction history view-->
+      <section id="transaction-history-view">
+      </section>
+      <!--new user view-->
+      <section id="new-user-view" class="hidden">
+        <form>
+          <div id="new-user-login" class="container">
+            <label class="bold-label" for="uname">Username</label>
+            <input id="new-username" type="text" placeholder="Enter Username" name="uname" required>
+            <label class="bold-label" for="psw">Password</label>
+            <input id="new-password" type="password" placeholder="Enter Password" name="psw" required>
+            <label class="bold-label" for="email">Email</label>
+            <input id="new-email" type="text" placeholder="Enter Email" name="email" required>
+            <button type="submit" id="new-user-submit">Create Account</button>
+            <button type="button" id="new-user-cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Gym Gurus USA, All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+

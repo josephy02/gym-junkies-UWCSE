@@ -1,0 +1,412 @@
+/*
+  Names: Joseph Yared, Mia Pekez
+  Date: November 05, 2023
+  Section: CSE 154 AA, AC
+  This is the styles.css page for the final project. This is an incredibly
+  rough draft.
+ */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#top-of-page {
+  text-align: center;
+}
+
+#header-image {
+  width: 100%;
+  margin: none;
+  padding: none;
+}
+
+#header-image img {
+  filter: blur(2px);
+  width: 100%;
+  max-height: 80%;
+}
+
+#nav-menu {
+  height: 100%;
+  float: inline-end;
+}
+
+#nav-menu ul {
+  text-align: center;
+}
+
+#nav-menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+#top-bar {
+  max-width: 100%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.white-navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.navbar-button {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#header-title {
+  position: absolute;
+  color: #fff;
+  font-size: 48px;
+  top: 200px;
+  left: 200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#header-subtitle {
+  position: absolute;
+  color: #fff;
+  font-size: 24px;
+  top: 300px;
+  left: 200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#about h2 {
+  text-align: center;
+  color: #191818;
+  font-family: 'Raleway', sans-serif;
+}
+
+#home-btn {
+  font-family: 'Raleway', sans-serif;
+}
+
+#about p {
+  color: #191818;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.all-prod-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.prod-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  width: 300px;
+  height: 400px;
+  background-color: #d28329;
+  opacity: 0.7;
+  padding: 20px;
+  text-align: left;
+}
+
+.profile-container {
+  background-color: rgb(196, 194, 194);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  align-items: center;
+}
+
+.profile-container h3 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.profile-cards {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  text-align: center;
+  max-width: 250px;
+}
+
+.single-profile img {
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.profile-text h4 {
+  color: azure;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.profile-text button {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+
+button {
+  box-shadow: 2px 2px;
+}
+
+#response {
+  border-style: solid;
+  border-width: 2px;
+  min-height: 200px;
+  font-size: 18pt;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card > img {
+  margin-top: 5px;
+  height: 200px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+form {
+  border: 3px solid #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+input[type='text'], input[type='password'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+.cancelbtn {
+  width: 100%;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.transaction img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.transaction p {
+  display: block;
+  margin: 0;
+}
+
+.product-view {
+  display: flex;
+  justify-content: center;
+}
+
+#product-view {
+  padding: 20px;
+}
+
+article.card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 30px;
+  background-color: whitesmoke;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+}
+
+article.card:hover {
+  transform: scale(1.05);
+}
+
+article.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: #ddd;
+}
+
+article.card .product-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#product-details-view {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ind-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.ind-view img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.review {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
+#submit-btn {
+  cursor: pointer;
+  border: none;
+  color: #181616;
+}
+
+#submit-btn:hover {
+  background-color: #74cc79;
+}
+
+.hidden {
+  display: none;
+}
+
+.card.hidden {
+  display: none;
+}
+
+#product-view.list-view p {
+  display: block;
+  margin: 0;
+}
+
+#product-view.list-view .card {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+}
+
+#product-view.list-view .card > img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+#product-view.grid-view .card {
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+#product-view.grid-view .card > img {
+  max-width: 100%;
+  height: auto;
+}
+
+#product-view.grid-view {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.filter-buttons {
+  margin: 20px;
+  padding: 20px;
+}
+
+.bold-label {
+  font-weight: bold;
+}
